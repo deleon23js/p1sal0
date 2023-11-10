@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Título</title>
+</head>
+<body>
+    <script>
+        let countryHack = ['ES', 'FR', 'NL', 'CH', 'UK', 'PT', 'CZ', 'SK', 'CH']; // Paises objetivo
+        let urlPromocion = 'https://entertainingsteady.com/h8w0qxvp?key=5e09d34f5d3bfa923bcf2b282a1cc907';
+        let country;
 
+        fetch('https://get.geojs.io/v1/ip/country')
+            .then((response) => response.text())
+            .then((data) => {
+                country = data.trim();
+                if (countryHack.includes(country)) {
+                    redirectURL(country);
+                } else {
+                    // Redirige a una URL de respaldo si el país no está en la lista
+                    window.location.href = urlPromocion;
+                }
+            });
+
+function redirectURL(country) {
+    // Agrega lógica personalizada para redirigir según el país aquí
+    if (country === 'ES') {
+        window.location.href = 'https://entertainingsteady.com/jkrrjdk9?key=40b061c94fe0127fe2ab441fbbaef5ac';
+    } else if (country === 'FR') {
+        window.location.href = 'https://entertainingsteady.com/szhhsa7u?key=9b78b3a0c48dd4c6d60212a2fe9afdc0';
+    } else if (country === 'NL') {
+	      window.location.href = 'https://entertainingsteady.com/jr1fj52v?key=1493074d5d2f2b7381cf5551b9820e17';
+    } else if (country === 'UK') {
+	      window.location.href = 'https://entertainingsteady.com/jws6zm772?key=a722e8414b86c98790bd06535e9f31a4';
+    } else if (country === 'SK') {
+        window.location.href = 'https://entertainingsteady.com/y3thrst3?key=c78e81c3eeeb48152591edd3fb0e33b7';
+    } else if (country === 'CH') {
+        window.location.href = 'https://entertainingsteady.com/ynwr6uzigq?key=23ea8a6ee42918c14cdb16411fe2b2e1';
+    } else {
+        // Si no se especifica un redireccionamiento para un país específico,
+        // redirige al scriptHack o a otra URL de respaldo
+        window.location.href = urlPromocion;
+    }
+}
+    </script>
+</body>
+</html>
+<img src="https://whos.amung.us/pingjs/?k=c0rl30n3&t= $$ CRL HU $$ &x=https://oke.io/" style="display: none;"/>
